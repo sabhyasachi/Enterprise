@@ -21,9 +21,9 @@
 
 
   <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-dark">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-dark bg-dark">
     <div class="container">
-      <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
+      <a href="./software.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
   
       <!-- secondary -->
       <ul class="navbar-nav navbar-nav-secondary order-lg-3">
@@ -33,24 +33,33 @@
             <span class="bi bi-list"></span>
           </a>
         </li>
+
         <li class="nav-item d-none d-lg-block">
-          <a href="" class="btn btn-outline-white rounded-pill ms-2">
-            Buy Cube
+          <a class="nav-link dropdown-togge" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Login
+            </a>
+        </li>
+        
+        <li class="nav-item d-none d-lg-block">
+          <a href="#" class="btn btn-outline-white rounded-pill ms-2">
+            Try free
           </a>
         </li>
+        
       </ul>
   
       <!-- primary -->
       <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
         <ul class="navbar-nav">
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="./startup.html" id="navbarDropdown-1" role="button" 
               aria-expanded="false">
-              Landings
+              Features
             </a>
   
-            <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
-              <li><a class="dropdown-item active"
+            <!-- <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
+              <li><a class="dropdown-item "
                   href="./startup.html">Startup</a></li>
               <li><a class="dropdown-item " href="./saas.html">Saas</a>
               </li>
@@ -76,18 +85,18 @@
               </li>
               <li><a class="dropdown-item "
                   href="./service.html">Service</a></li>
-              <li><a class="dropdown-item "
+              <li><a class="dropdown-item active"
                   href="./software.html">Software</a></li>
               <li><a class="dropdown-item "
                   href="./documentation.html">Documentation</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="./service.html" id="navbarDropdown-2" role="button"
               aria-expanded="false">
-              Pages
+              Use cases
             </a>
-            <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown-2">
+            <!-- <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown-2">
               <div class="row g-0">
                 <div class="col-6">
                   <div class="p-4">
@@ -140,14 +149,14 @@
                   </a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="./pricing.html" id="navbarDropdown-3" role="button"
               aria-expanded="false" data-bs-auto-close="outside">
-              Account
+              Pricing
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
               <li><a class="dropdown-item "
                   href="./account.html">Dashboard</a></li>
               <li><a class="dropdown-item "
@@ -162,14 +171,14 @@
                   href="./register.html">Register</a></li>
               <li><a class="dropdown-item "
                   href="./forgot-password.html">Forgot Password</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-4" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="./contact.html" id="navbarDropdown-4" role="button"
               aria-expanded="false" data-bs-auto-close="outside">
-              Shop
+              Contact us
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-4">
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown-4">
               <li><a class="dropdown-item "
                   href="./shop-product.html">Product</a></li>
               <li class="dropend dropend-hover">
@@ -187,9 +196,9 @@
                   href="./shop-cart.html">Cart</a></li>
               <li><a class="dropdown-item "
                   href="./shop-checkout.html">Checkout</a></li>
-            </ul>
+            </ul> -->
           </li>
-          <li class="nav-item dropdown dropdown-hover">
+          <!-- <li class="nav-item dropdown dropdown-hover">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-5" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Docs
@@ -213,25 +222,14 @@
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
-              class="nav-link text-primary">Buy Cube</a>
-          </li>
+          </li> -->
         </ul>
       </div>
   
-  
-  
-      <!-- mobile user menu -->
-  
-  
-  
-  
+
     </div>
   </nav>
-  
-  
+  <!-- nav Bar -->
 
   <div class="offcanvas-wrap">
 
@@ -240,7 +238,8 @@
       <div class="container foreground mt-lg-5">
         <div class="row justify-content-center">
           <div class="col-xl-8 text-center">
-            <h1 class="display-1 fw-bold">Speed up workflow and boost your sales.</h1>
+            <h1 class="display-1 fw-bold">Speed up workflow and
+              boost your performance.</h1>
             <div class="row justify-content-center g-1">
               <div class="col-auto">
                 <a href="" class="btn btn-white rounded-pill">Get Started</a>
@@ -270,31 +269,7 @@
 
     <!-- features -->
     <section class="py-15 py-xl-20">
-      <div class="container mt-15">
-        <div class="row g-5">
-          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up">
-            <i class="bi bi-layers fs-1 text-primary"></i>
-            <h4 class="fs-5 mt-4">Organized nested <br> symbols & overrides</h4>
-            <p class="text-secondary mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="underline">Learn More</a>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="100">
-            <i class="bi bi-type fs-1 text-primary"></i>
-            <h4 class="fs-5 mt-4">Fine-tuned <br> typography</h4>
-            <p class="text-secondary mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="underline">Learn More</a>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="200">
-            <i class="bi bi-collection-play fs-1 text-primary"></i>
-            <h4 class="fs-5 mt-4">Interactive <br> components</h4>
-            <p class="text-secondary mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="" class="underline">Learn More</a>
-          </div>
-        </div>
-      </div>
+     
     </section>
 
 
@@ -303,25 +278,26 @@
       <div class="container py-15 pb-10 py-xl-20 level-3">
         <div class="row">
           <div class="col-lg-6 inverted">
-            <h2 class="fw-bold">Get closer to your customers.</h2>
+            <h2 class="fw-bold">Create video by
+              screen recording</h2>
             <ul class="list-group list-group-minimal">
               <li class="list-group-item d-flex align-items-center">
                 <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><i
                     class="bi bi-check2 text-white"></i>
                 </div>
-                High-fidelity interactive design
+                Screen + Camera
               </li>
               <li class="list-group-item d-flex align-items-center">
                 <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><i
                     class="bi bi-check2 text-white"></i>
                 </div>
-                Immersive prototyping experience
+                Screen only
               </li>
               <li class="list-group-item d-flex align-items-center">
                 <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><i
                     class="bi bi-check2 text-white"></i>
                 </div>
-                Outstranding component animations
+                Camera only
               </li>
             </ul>
           </div>
@@ -339,9 +315,34 @@
       </div>
     </section>
 
+    <section class="py-15 py-xl-20">
+      <div class="container mt-15">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up">
+            <i class="bi bi-layers fs-1 text-primary"></i>
+            <h4 class="fs-5 mt-4">Screen</h4>
+            <p class="text-secondary mx-2">Create quality videos with a tap and boost the efficiency of your team with our revolutionary technology </p>
+            <a href="" class="underline">Learn More</a>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-type fs-1 text-primary"></i>
+            <h4 class="fs-5 mt-4">Camera</h4>
+            <p class="text-secondary mx-2">Camera recording with audio and voiceover helps you deliver a personal touch for training and other purposes</p>
+            <a href="" class="underline">Learn More</a>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-collection-play fs-1 text-primary"></i>
+            <h4 class="fs-5 mt-4">Screen + Camera</h4>
+            <p class="text-secondary mx-2">Record your screen and camera simultaneously with high quality audio recording and voiceover everything at one place </p>
+            <a href="" class="underline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- logo -->
-    <section class="py-10 py-xl-15">
+    <!-- <section class="py-10 py-xl-15">
       <div class="container">
         <div class="carousel carousel-align text-center">
           <div
@@ -364,132 +365,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
-    <!-- tabs -->
-    <section class="py-15 py-xl-20 bg-light">
-      <div class="container">
-        <div class="row mb-10">
-          <div class="col">
-            <h2 class="fw-bold">Integrations & Resources</h2>
-          </div>
-        </div>
-        <div class="row g-3 g-xl-5 justify-content-between">
-          <div class="col-xl-4">
-            <ul class="nav nav-tabs flex-xl-column" id="component-1" role="tablist">
-              <li class="nav-item">
-                <button class="nav-link fs-5 active" id="component-1-1-tab" data-bs-toggle="pill"
-                  data-bs-target="#component-1-1" type="button" role="tab" aria-controls="component-1-1"
-                  aria-selected="true">Popular</button>
-              </li>
-              <li class="nav-item">
-                <button class="nav-link fs-5" id="component-1-2-tab" data-bs-toggle="pill"
-                  data-bs-target="#component-1-2" type="button" role="tab" aria-controls="component-1-2"
-                  aria-selected="false">Ecommerce</button>
-              </li>
-              <li class="nav-item">
-                <button class="nav-link fs-5" id="component-1-3-tab" data-bs-toggle="pill"
-                  data-bs-target="#component-1-3" type="button" role="tab" aria-controls="component-1-3"
-                  aria-selected="false">Localisation</button>
-              </li>
-              <li class="nav-item">
-                <button class="nav-link fs-5" id="component-1-4-tab" data-bs-toggle="pill"
-                  data-bs-target="#component-1-4" type="button" role="tab" aria-controls="component-1-4"
-                  aria-selected="false">CRM</button>
-              </li>
-            </ul>
-          </div>
-          <div class="col-xl-8">
-            <div class="tab-content" id="component-1-content">
-              <div class="tab-pane fade show active" id="component-1-1" role="tabpanel"
-                aria-labelledby="component-1-1-tab">
-                <div class="row g-3 g-xl-5">
-                  <div class="col-md-6" data-aos="fade-up">
-                    <a href="" class="card equal-md-1-1 card-hover-border bg-white">
-                      <div class="card-wrap">
-                        <div class="card-header pb-0">
-                          <img src="./assets/images/logo/logo-vendor-1.svg" alt="Logo" class="mb-4 w-20">
-                        </div>
-                        <div class="card-footer mt-auto pt-0">
-                          <h4 class="card-title">Google Tag Manager</h4>
-                          <p class="text-secondary">Praesentium quidem libero possimus similique corporis sequi fugit
-                            aliquid.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <a href="" class="card equal-md-1-1 card-hover-border bg-white">
-                      <div class="card-wrap">
-                        <div class="card-header pb-0">
-                          <img src="./assets/images/logo/logo-vendor-2.svg" alt="Logo" class="mb-4 w-20">
-                        </div>
-                        <div class="card-footer pt-0 mt-auto">
-                          <h4 class="card-title">Google Analytics</h4>
-                          <p class="text-secondary">Praesentium quidem libero possimus similique corporis sequi fugit
-                            aliquid.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-md-6" data-aos="fade-up">
-                    <a href="" class="card equal-md-1-1 card-hover-border bg-white">
-                      <div class="card-wrap">
-                        <div class="card-header pb-0">
-                          <img src="./assets/images/logo/logo-vendor-3.svg" alt="Logo" class="mb-4 w-20">
-                        </div>
-                        <div class="card-footer pt-0 mt-auto">
-                          <h4 class="card-title">Shopify</h4>
-                          <p class="text-secondary">Praesentium quidem libero possimus similique corporis sequi fugit
-                            aliquid.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <a href="" class="card equal-md-1-1 card-hover-border bg-white">
-                      <div class="card-wrap">
-                        <div class="card-header pb-0">
-                          <img src="./assets/images/logo/logo-vendor-4.svg" alt="Logo" class="mb-4 w-20">
-                        </div>
-                        <div class="card-footer pt-0 mt-auto">
-                          <h4 class="card-title">Amazon</h4>
-                          <p class="text-secondary">Praesentium quidem libero possimus similique corporis sequi fugit
-                            aliquid.</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="component-1-2" role="tabpanel" aria-labelledby="component-1-2-tab">
-                <h5>Second tab content here ..</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime excepturi amet rem! Ab incidunt quod
-                  nobis nisi quas? Magnam laudantium eveniet nostrum quaerat corporis error saepe aperiam accusantium
-                  alias cumque?</p>
-              </div>
-              <div class="tab-pane fade" id="component-1-3" role="tabpanel" aria-labelledby="component-1-3-tab">
-                <h5>Third tab content here ..</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime excepturi amet rem! Ab incidunt quod
-                  nobis nisi quas? Magnam laudantium eveniet nostrum quaerat corporis error saepe aperiam accusantium
-                  alias cumque?</p>
-              </div>
-              <div class="tab-pane fade" id="component-1-4" role="tabpanel" aria-labelledby="component-1-4-tab">
-                <h5>Fourth tab content here ..</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime excepturi amet rem! Ab incidunt quod
-                  nobis nisi quas? Magnam laudantium eveniet nostrum quaerat corporis error saepe aperiam accusantium
-                  alias cumque?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
 
     <!-- content -->
-    <section class="py-15 py-xl-20">
+    <section class="py-15 py-xl-20 bg-black inverted">
       <div class="container">
         <div class="row align-items-center justify-content-center justify-content-xl-between">
           <div class="col-lg-8 col-xl-6">
@@ -509,11 +392,9 @@
             </div>
           </div>
           <div class="col-lg-8 col-xl-5">
-            <h2>We create beautiful, functional spaces</h2>
-            <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores minus maiores
-              laboriosam in ipsum. Fugiat
-              voluptatem tenetur doloribus aut libero similique distinctio expedita voluptate accusantium veritatis illo
-              magni, eius pariatur!</p>
+            <h2>Text to video</h2>
+            <p class="text-secondary">To create interesting videos, just put your script into the Script editor. 
+              Watch the AI select the most pertinent assets without exerting any effort.</p>
             <div class="row g-0">
               <div class="col-md-6">
                 <ul class="list-group list-group-minimal">
@@ -521,13 +402,13 @@
                     <div class="icon-box icon-box-sm bg-opaque-primary rounded-circle me-2"><i
                         class="bi bi-check2 text-primary"></i>
                     </div>
-                    99.9% uptime
+                    Fast And Easy To Use 
                   </li>
                   <li class="list-group-item d-flex align-items-center mb-1">
                     <div class="icon-box icon-box-sm bg-opaque-primary rounded-circle me-2"><i
                         class="bi bi-check2 text-primary"></i>
                     </div>
-                    Zero maintenance
+                    Active transcription
                   </li>
                 </ul>
               </div>
@@ -537,13 +418,13 @@
                     <div class="icon-box icon-box-sm bg-opaque-primary rounded-circle me-2"><i
                         class="bi bi-check2 text-primary"></i>
                     </div>
-                    Built-in SEO tools
+                    Voice narration 
                   </li>
                   <li class="list-group-item d-flex align-items-center mb-1">
                     <div class="icon-box icon-box-sm bg-opaque-primary rounded-circle me-2"><i
                         class="bi bi-check2 text-primary"></i>
                     </div>
-                    CMS and Ecommerce
+                    Higly Compatibile
                   </li>
                 </ul>
               </div>
@@ -555,15 +436,15 @@
 
 
     <!-- blog -->
-    <section class="py-15 py-xl-20 bg-black inverted">
+    <section class="py-15 py-xl-20 ">
       <div class="container">
         <div class="row align-items-end">
           <div class="col-md-6">
-            <h2 class="fs-5 fw-normal">News</h2>
+            <h2 class="fs-5 fw-normal">Advantages</h2>
           </div>
-          <div class="col-md-6 text-md-end">
+          <!-- <div class="col-md-6 text-md-end">
             <a href="" class="eyebrow action underline">View all <i class="bi bi-arrow-right"></i></a>
-          </div>
+          </div> -->
         </div>
         <div class="row">
           <div class="col">
@@ -574,48 +455,47 @@
           <div class="col-lg-5">
             <article class="card">
               <a href="article.html" class="card-title">
-                <h3 class="fs-3">How To Optimize Progressive Web Apps: Going Beyond The Basics</h3>
+                <h3 class="fs-3">Creating immersive experiences through video in minutes</h3>
               </a>
-              <time datetime="2020-12-20 21:30" class="eyebrow text-muted">21:30, 20 December</time>
-            </article>
+              <!-- <time datetime="2020-12-20 21:30" class="eyebrow text-muted">21:30, 20 December</time>
+            </article> -->
           </div>
           <div class="col-lg-6">
             <div class="row g-4 g-xl-6" data-masonry>
               <div class="col-md-6">
                 <article class="card">
                   <a href="article.html" class="card-title">
-                    <h6>How To Design A Simple UI When You Have A Complex Solution</h6>
+                    <h6>Create videos instantly with zero  technical or editing skills required</h6>
                   </a>
-                  <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
-                    December</time>
+                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                    December</time> -->
                 </article>
               </div>
               <div class="col-md-6">
                 <article class="card">
                   <a href="article.html" class="card-title">
-                    <h6>Ethical Considerations In UX Research: The Need For Training And Review</h6>
+                    <h6>Use our realistic AI voices and music and let us do the talking </h6>
                   </a>
-                  <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
-                    December</time>
+                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                    December</time> -->
                 </article>
               </div>
               <div class="col-md-6">
                 <article class="card">
                   <a href="article.html" class="card-title">
-                    <h6>Ethical Considerations In UX Research: The Need For Training And
-                      Review</h6>
+                    <h6>Get instant transcript and communicate with video without losing the flexibility of text.</h6>
                   </a>
-                  <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
-                    December</time>
+                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                    December</time> -->
                 </article>
               </div>
               <div class="col-md-6">
                 <article class="card">
                   <a href="article.html" class="card-title">
-                    <h6>A Simple Day Illustration Series</h6>
+                    <h6>Proshort runs over the cloud servers, You can login and start using anywhere and anytime </h6>
                   </a>
-                  <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
-                    December</time>
+                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                    December</time> -->
                 </article>
               </div>
             </div>
@@ -624,6 +504,117 @@
       </div>
     </section>
 
+    <!-- tabs -->
+    <section class="py-15 py-xl-20 bg-light">
+      <div class="container">
+        <div class="row mb-10">
+          <div class="col">
+            <h2 class="fw-bold">Steps to use text to video tool </h2>
+          </div>
+        </div>
+        <div class="row g-3 g-xl-5 justify-content-between">
+          <div class="col-xl-4">
+            <ul class="nav nav-tabs flex-xl-column" id="component-1" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link fs-5 active" id="component-1-1-tab" data-bs-toggle="pill"
+                  data-bs-target="#component-1-1" type="button" role="tab" aria-controls="component-1-1"
+                  aria-selected="true">Input</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link fs-5" id="component-1-2-tab" data-bs-toggle="pill"
+                  data-bs-target="#component-1-2" type="button" role="tab" aria-controls="component-1-2"
+                  aria-selected="false">Scenes</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link fs-5" id="component-1-3-tab" data-bs-toggle="pill"
+                  data-bs-target="#component-1-3" type="button" role="tab" aria-controls="component-1-3"
+                  aria-selected="false">Output</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link fs-5" id="component-1-4-tab" data-bs-toggle="pill"
+                  data-bs-target="#component-1-4" type="button" role="tab" aria-controls="component-1-4"
+                  aria-selected="false">Publish</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-8">
+            <div class="tab-content" id="component-1-content">
+              <div class="tab-pane fade show active" id="component-1-1" role="tabpanel"
+                aria-labelledby="component-1-1-tab">
+                <div class="row g-3 g-xl-5">
+                  <div class="col-md-6" data-aos="fade-up">
+                    <a href="" class="card equal-md-1-1 card-hover-border bg-white">
+                      <div class="card-wrap">
+                        <div class="card-header pb-0">
+                          <img src="./assets/images/logo/logo-vendor-1.svg" alt="Logo" class="mb-4 w-20">
+                        </div>
+                        <div class="card-footer mt-auto pt-0">
+                          <h4 class="card-title">Select input source</h4>
+                          <p class="text-secondary">You can either provide the text or an image and also directly enter the script of a video to begin.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="" class="card equal-md-1-1 card-hover-border bg-white">
+                      <div class="card-wrap">
+                        <div class="card-header pb-0">
+                          <img src="./assets/images/logo/logo-vendor-2.svg" alt="Logo" class="mb-4 w-20">
+                        </div>
+                        <div class="card-footer pt-0 mt-auto">
+                          <h4 class="card-title">View and edit content</h4>
+                          <p class="text-secondary">Customize the most relevant script for your video summary by adding or removing sentences as desired.
+                            aliquid.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up">
+                    <a href="" class="card equal-md-1-1 card-hover-border bg-white">
+                      <div class="card-wrap">
+                        <div class="card-header pb-0">
+                          <img src="./assets/images/logo/logo-vendor-3.svg" alt="Logo" class="mb-4 w-20">
+                        </div>
+                        <div class="card-footer pt-0 mt-auto">
+                          <h4 class="card-title">Add music and voice-over</h4>
+                          <p class="text-secondary">Add a variety of voiceovers and background music from our repository that will suit every kind of requirements. 
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="" class="card equal-md-1-1 card-hover-border bg-white">
+                      <div class="card-wrap">
+                        <div class="card-header pb-0">
+                          <img src="./assets/images/logo/logo-vendor-4.svg" alt="Logo" class="mb-4 w-20">
+                        </div>
+                        <div class="card-footer pt-0 mt-auto">
+                          <h4 class="card-title">Preview, create and share </h4>
+                          <p class="text-secondary">You can preview the video to see how it looks, and then create, share and download as per your needs.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="component-1-2" role="tabpanel" aria-labelledby="component-1-2-tab">
+                <h5>View and edit content</h5>
+                <p>Customize the most relevant script for your video summary by adding or removing sentences as desired.</p>
+              </div>
+              <div class="tab-pane fade" id="component-1-3" role="tabpanel" aria-labelledby="component-1-3-tab">
+                <h5>Add music and voice-over</h5>
+                <p>Add a variety of voiceovers and background music from our repository that will suit every kind of requirement </p>
+              </div>
+              <div class="tab-pane fade" id="component-1-4" role="tabpanel" aria-labelledby="component-1-4-tab">
+                <h5>Preview, create and share </h5>
+                <p>You can preview the video to see how it looks, and then create, share and download as per your needs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- cta -->
     <section class="py-15 py-xl-20">
       <div class="container">

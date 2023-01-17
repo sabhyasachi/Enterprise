@@ -20,10 +20,10 @@
 <body>
 
 
-  <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-light">
+   <!-- navbar -->
+   <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-dark bg-dark ">
     <div class="container">
-      <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
+      <a href="./software.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
   
       <!-- secondary -->
       <ul class="navbar-nav navbar-nav-secondary order-lg-3">
@@ -33,23 +33,32 @@
             <span class="bi bi-list"></span>
           </a>
         </li>
+
         <li class="nav-item d-none d-lg-block">
-          <a href="" class="btn btn-outline-light rounded-pill ms-2">
-            Buy Cube
+          <a class="nav-link dropdown-togge" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Login
+            </a>
+        </li>
+        
+        <li class="nav-item d-none d-lg-block">
+          <a href="#" class="btn btn-outline-white rounded-pill ms-2">
+            Try free
           </a>
         </li>
+        
       </ul>
   
       <!-- primary -->
       <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
         <ul class="navbar-nav">
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="./startup.html" id="navbarDropdown-1" role="button" 
               aria-expanded="false">
-              Landings
+              Features
             </a>
   
-            <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
+            <!-- <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
               <li><a class="dropdown-item "
                   href="./startup.html">Startup</a></li>
               <li><a class="dropdown-item " href="./saas.html">Saas</a>
@@ -76,25 +85,25 @@
               </li>
               <li><a class="dropdown-item "
                   href="./service.html">Service</a></li>
-              <li><a class="dropdown-item "
+              <li><a class="dropdown-item active"
                   href="./software.html">Software</a></li>
               <li><a class="dropdown-item "
                   href="./documentation.html">Documentation</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-2" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="./service.html" id="navbarDropdown-2" role="button"
               aria-expanded="false">
-              Pages
+              Use cases
             </a>
-            <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown-2">
+            <!-- <div class="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdown-2">
               <div class="row g-0">
                 <div class="col-6">
                   <div class="p-4">
                     <span class="dropdown-label">Company</span>
                     <a class="dropdown-item "
                       href="./about.html">About</a>
-                    <a class="dropdown-item active"
+                    <a class="dropdown-item "
                       href="./pricing.html">Pricing</a>
                     <a class="dropdown-item " href="./faq.html">FAQ</a>
                     <a class="dropdown-item "
@@ -140,14 +149,14 @@
                   </a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-3" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="./pricing.html" id="navbarDropdown-3" role="button"
               aria-expanded="false" data-bs-auto-close="outside">
-              Account
+              Pricing
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
               <li><a class="dropdown-item "
                   href="./account.html">Dashboard</a></li>
               <li><a class="dropdown-item "
@@ -162,14 +171,14 @@
                   href="./register.html">Register</a></li>
               <li><a class="dropdown-item "
                   href="./forgot-password.html">Forgot Password</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-4" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" href="./contact.html" id="navbarDropdown-4" role="button"
               aria-expanded="false" data-bs-auto-close="outside">
-              Shop
+              Contact us
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown-4">
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown-4">
               <li><a class="dropdown-item "
                   href="./shop-product.html">Product</a></li>
               <li class="dropend dropend-hover">
@@ -187,9 +196,9 @@
                   href="./shop-cart.html">Cart</a></li>
               <li><a class="dropdown-item "
                   href="./shop-checkout.html">Checkout</a></li>
-            </ul>
+            </ul> -->
           </li>
-          <li class="nav-item dropdown dropdown-hover">
+          <!-- <li class="nav-item dropdown dropdown-hover">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-5" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Docs
@@ -213,23 +222,14 @@
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a href="https://themes.getbootstrap.com/product/cube-multipurpose-template-ui-kit/"
-              class="nav-link text-primary">Buy Cube</a>
-          </li>
+          </li> -->
         </ul>
       </div>
   
-  
-  
-      <!-- mobile user menu -->
-  
-  
-  
-  
+
     </div>
   </nav>
+  <!-- nav Bar -->
   
   
 
@@ -469,20 +469,40 @@
   <!-- footer -->
   <footer class="py-15 py-xl-20">
     <div class="container">
-      <div class="row g-4 g-lg-5 mb-10">
+      <div class="row g-4 g-lg-4 mb-10">
         <div class="col-md-3 text-center text-md-start">
           <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
         </div>
-        <div class="col-md-4 col-lg-5 text-center text-md-start">
+        <div class="col-md-4 col-lg-2 text-center text-md-start">
           <ul class="list-unstyled">
-            <li class="mb-1"><a href="" class="text-reset text-primary-hover">documentation</a></li>
-            <li class="mb-1"><a href="" class="text-reset text-primary-hover">components</a></li>
-            <li class="mb-1"><a href="" class="text-reset text-primary-hover">blocks</a></li>
-            <li class="mb-1"><a href="" class="text-reset text-primary-hover">changelog</a></li>
-            <li><a href="" class="text-reset text-primary-hover">roadmap</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover"><b>Company</b> </a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Home</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Login/Signup</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Contact Us</a></li>
+            
           </ul>
         </div>
-        <div class="col-md-5 col-lg-4">
+        <div class="col-md-4 col-lg-2 text-center text-md-start">
+          <ul class="list-unstyled">
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover"><b>Features</b></a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Recording</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Text to video</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-2 text-center text-md-start">
+          <ul class="list-unstyled">
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover"><b>Use Cases</b></a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Engineering</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Sales</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Marketing</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Product</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Training</a></li>
+            <li class="mb-1"><a href="" class="text-reset text-primary-hover">Design</a></li>
+            <li><a href="" class="text-reset text-primary-hover">Leadership</a></li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-lg-3">
           <div class="grouped-inputs border p-1 rounded-pill">
             <div class="row">
               <div class="col">
