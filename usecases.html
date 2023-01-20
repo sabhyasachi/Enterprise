@@ -4,26 +4,68 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
   <!-- Favicon -->
   <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" /> -->
-  
+
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-  
+
   <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/index.bundle.css" />
-  
+
   <!-- Title -->
-  <title>Services</title></head>
+  <title>Services</title>
+
+  <style>
+    .bg-grad {
+      background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+      border: none !important;
+    }
+
+    .bg-grad-hover:hover {
+      background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+    }
+
+    .text-grad {
+      background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .bg-black-tr {
+      background: #000a;
+    }
+  </style>
+</head>
+
+<style>
+  .bg-grad {
+    background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+    border: none !important;
+  }
+
+  .bg-grad-hover:hover {
+    background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+  }
+
+  .text-grad {
+    background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
 
 <body>
+
 
   <!-- navbar -->
   <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky  navbar-light bg-light">
     <div class="container">
-      <a href="./software.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
-  
+      <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
+
       <!-- secondary -->
       <ul class="navbar-nav navbar-nav-secondary order-lg-3">
         <li class="nav-item d-lg-none">
@@ -35,31 +77,31 @@
 
         <li class="nav-item d-none d-lg-block">
           <a class="nav-link dropdown-togge" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Login
-            </a>
+            aria-expanded="false">
+            Login
+          </a>
         </li>
-        
+
         <li class="nav-item d-none d-lg-block">
-          <a href="#" class="btn btn-outline-black rounded-pill ms-2">
+          <a href="#" class="btn bg-grad text-white rounded-pill ms-2">
             Try free
           </a>
         </li>
-        
+
       </ul>
-  
+
       <!-- primary -->
       <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
         <ul class="navbar-nav">
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="./startup.html" id="navbarDropdown-1" role="button" 
+            <a class="nav-link dropdown-toggle" href="./features.html" id="navbarDropdown-1" role="button"
               aria-expanded="false">
               Features
             </a>
-  
+
             <!-- <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
               <li><a class="dropdown-item "
-                  href="./startup.html">Startup</a></li>
+                  href="./features.html">Startup</a></li>
               <li><a class="dropdown-item " href="./saas.html">Saas</a>
               </li>
               <li><a class="dropdown-item "
@@ -83,15 +125,15 @@
                   href="./course.html">Course</a>
               </li>
               <li><a class="dropdown-item "
-                  href="./service.html">Service</a></li>
+                  href="./usecases.html">Service</a></li>
               <li><a class="dropdown-item active"
-                  href="./software.html">Software</a></li>
+                  href="./index.html">Software</a></li>
               <li><a class="dropdown-item "
                   href="./documentation.html">Documentation</a></li>
             </ul> -->
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="./service.html" id="navbarDropdown-2" role="button"
+            <a class="nav-link dropdown-toggle" href="./usecases.html" id="navbarDropdown-2" role="button"
               aria-expanded="false">
               Use cases
             </a>
@@ -224,40 +266,44 @@
           </li> -->
         </ul>
       </div>
-  
-
     </div>
   </nav>
+ <!-- mobile user menu -->
+
+
   <!-- nav Bar -->
-  
-  
 
 
-  <!-- steps --> 
+
+
+  <!-- steps -->
   <section class="py-15 py-xl-20 bg-black inverted overflow-hidden">
     <div class="container mt-10 level-3">
       <div class="row mb-md-10">
         <div class="col-md-10 col-lg-8">
-          <h1 class="display-2 font-weight-bold">Unlock team potential with 
+          <h1 class="display-2 font-weight-bold">Unlock team potential with
             power of video automation</h1>
         </div>
       </div>
-      <div class="row g-3 g-xl-5">
+      <div class="row g-3 g-xl-5 bg-black-tr p-5 pt-1">
         <div class="col-md-6 col-lg-4">
-          <span class="h3 fw-bold">80%</span>
-          <h4 class="h5 my-2">People remember what they see as opposed to what they read. Better retention leads to less employee mistakes.</p>
+          <span class="h3 fw-bold text-grad">80%</span>
+          <h4 class="h5 my-2">People remember what they see as opposed to what they read. Better retention leads to less
+            employee mistakes.</p>
         </div>
         <div class="col-md-6 col-lg-4">
-          <span class="h3 fw-bold">83%</span>
+          <span class="h3 fw-bold text-grad">83%</span>
           <h4 class="h5 my-2">of people say they prefer instructional videos over training manuals.</p>
         </div>
         <div class="col-lg-4">
-          <span class="h3 fw-bold">34%</span>
-          <h4 class="h5 my-2">increase in the conversion rate if the video content was added to their campaign as per marketers.</p>
+          <span class="h3 fw-bold text-grad">34%</span>
+          <h4 class="h5 my-2">increase in the conversion rate if the video content was added to their campaign as per
+            marketers.</p>
         </div>
       </div>
     </div>
-    <figure class="background background-overlay" style="background-image: url('./assets/images/services-1.jpg')">
+    <figure class="background background-overlay"
+      style="background-image: linear-gradient(45deg, #0006, #0008), url('./assets/images/services-1.jpg')">
     </figure>
   </section>
 
@@ -271,21 +317,26 @@
         <div class="row g-0 bg-dark">
           <div class="col-lg-6 p-4 p-md-10 order-lg-2 inverted inverted">
             <h3 class="fw-bold">Engineering</h3>
-            <p class="fs-lg text-secondary">Helps to communicate across your engineering team to streamline any collaboration. 
-              Enhanced context and clarity provided through videos can accelerate the development cycle and boost productivity.</p>
+            <p class="fs-lg text-secondary">Helps to communicate across your engineering team to streamline any
+              collaboration.
+              Enhanced context and clarity provided through videos can accelerate the development cycle and boost
+              productivity.</p>
             <div class="row">
               <div class="col-md-12">
                 <ul class="list-group list-group-minimal">
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Daily standups
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
-                    </div>Training and knowledge Sharing  
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
+                    </div>Training and knowledge Sharing
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Code and task review
                   </li>
                 </ul>
@@ -324,21 +375,25 @@
           </div>
           <div class="col-lg-6 p-4 p-md-10 order-lg-1 inverted">
             <h3 class="fw-bold">Sales</h3>
-            <p class="fs-lg text-secondary">Delivers personalised video greetings to prospects, enhancing outreach, conversion, and building personal connections. 
+            <p class="fs-lg text-secondary">Delivers personalised video greetings to prospects, enhancing outreach,
+              conversion, and building personal connections.
               It helps onboarding clients, increases CTR, and provides analytics for tracking effectiveness.</p>
             <div class="row">
               <div class="col-md-6">
                 <ul class="list-group list-group-minimal">
-              <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
-                </div>Enhance outreach
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
+                    </div>Enhance outreach
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Product explainers
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Onboarding clients
                   </li>
                 </ul>
@@ -371,21 +426,26 @@
         <div class="row g-0 bg-dark">
           <div class="col-lg-6 p-4 p-md-10 order-lg-2 inverted">
             <h3 class="fw-bold">Marketing</h3>
-            <p class="fs-lg text-secondary">Helps increase client engagement and foster teamwork through the creation of high-impact videos. 
-              It also allows the creation of social media content and personalized videos, helping drive business results.</p>
+            <p class="fs-lg text-secondary">Helps increase client engagement and foster teamwork through the creation of
+              high-impact videos.
+              It also allows the creation of social media content and personalized videos, helping drive business
+              results.</p>
             <div class="row">
               <div class="col-md-12">
                 <ul class="list-group list-group-minimal">
-              <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
-                </div>Social media contents and ads
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
+                    </div>Social media contents and ads
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Explainers and promotional videos
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Engagement insights
                   </li>
                 </ul>
@@ -427,21 +487,25 @@
           </div>
           <div class="col-lg-6 p-4 p-md-10 order-lg-1 inverted">
             <h3 class="fw-bold">Product</h3>
-            <p class="fs-lg text-secondary">Helps businesses communicate complex ideas and concepts, making product demonstrations and updates more interactive and engaging. 
+            <p class="fs-lg text-secondary">Helps businesses communicate complex ideas and concepts, making product
+              demonstrations and updates more interactive and engaging.
               Teams can work more efficiently and asynchronously.</p>
             <div class="row">
               <div class="col-md-6">
                 <ul class="list-group list-group-minimal">
-              <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
-                </div>Product updates
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
+                    </div>Product updates
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Product explainers
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Daily standups
                   </li>
                 </ul>
@@ -475,21 +539,25 @@
         <div class="row g-0 bg-dark">
           <div class="col-lg-6 p-4 p-md-10 order-lg-2 inverted">
             <h3 class="fw-bold">Training and onboarding</h3>
-            <p class="fs-lg text-secondary">Streamlines training, onboarding, and customer education by converting text into interactive visual content, 
+            <p class="fs-lg text-secondary">Streamlines training, onboarding, and customer education by converting text
+              into interactive visual content,
               helping absorb new information easily and understand and benefit from new products or services.</p>
             <div class="row">
               <div class="col-md-12">
                 <ul class="list-group list-group-minimal">
-              <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
-                </div>Training & development videos
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
+                    </div>Training & development videos
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Onboarding materials
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Culture and team building
                   </li>
                 </ul>
@@ -528,21 +596,25 @@
           </div>
           <div class="col-lg-6 p-4 p-md-10 order-lg-1 inverted">
             <h3 class="fw-bold">Design</h3>
-            <p class="fs-lg text-secondary">Enables fast and easy async video communication for design teams, allowing for quick iteration and timely feedback. 
+            <p class="fs-lg text-secondary">Enables fast and easy async video communication for design teams, allowing
+              for quick iteration and timely feedback.
               This ensures important details are not lost in communication with developers.</p>
             <div class="row">
               <div class="col-md-12">
                 <ul class="list-group list-group-minimal">
-              <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
-                </div>Meeting and presentations
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
+                    </div>Meeting and presentations
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Async discussion and reviews
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Design and concept presentation
                   </li>
                 </ul>
@@ -575,21 +647,25 @@
         <div class="row g-0 bg-dark">
           <div class="col-lg-6 p-4 p-md-10 order-lg-2 inverted">
             <h3 class="fw-bold">Leadership</h3>
-            <p class="fs-lg text-secondary">Helps leaders communicate important messages and ideas through visual content, improving understanding and retention. 
+            <p class="fs-lg text-secondary">Helps leaders communicate important messages and ideas through visual
+              content, improving understanding and retention.
               It also creates motivational videos to keep employees focused and inspired.</p>
             <div class="row">
               <div class="col-md-12">
                 <ul class="list-group list-group-minimal">
-              <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
-                </div>Company updates and announcement
+                  <li class="list-group-item d-flex align-items-center">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
+                    </div>Company updates and announcement
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Employee engagement
                   </li>
                   <li class="list-group-item d-flex align-items-center">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>Company policies and leadership
                   </li>
                 </ul>
@@ -621,7 +697,7 @@
     </section>
   </div>
 
-  
+
 
   <!-- cta -->
   <section class="pb-15 pb-xl-20">
@@ -640,7 +716,7 @@
     <div class="container">
       <div class="row g-4 g-lg-5 mb-10">
         <div class="col-md-3 text-center text-md-start">
-          <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
+          <a href="./home.html" class="navbar-brand"><img src="./assets/images/logo/logo-light.svg" alt="Logo"></a>
         </div>
         <div class="col-md-4 col-lg-2 text-center text-md-start">
           <ul class="list-unstyled">
@@ -648,7 +724,7 @@
             <li class="mb-1"><a href="" class="text-reset text-primary-hover">Home</a></li>
             <li class="mb-1"><a href="" class="text-reset text-primary-hover">Login/Signup</a></li>
             <li class="mb-1"><a href="" class="text-reset text-primary-hover">Contact Us</a></li>
-            
+
           </ul>
         </div>
         <div class="col-md-4 col-lg-2 text-center text-md-start">
@@ -656,7 +732,7 @@
             <li class="mb-1"><a href="" class="text-reset text-primary-hover"><b>Features</b></a></li>
             <li class="mb-1"><a href="" class="text-reset text-primary-hover">Recording</a></li>
             <li class="mb-1"><a href="" class="text-reset text-primary-hover">Text to video</a></li>
-            
+
           </ul>
         </div>
         <div class="col-md-4 col-lg-2 text-center text-md-start">
@@ -679,7 +755,7 @@
                   placeholder="Your email">
               </div>
               <div class="col-auto">
-                <a href="" class="btn btn-white btn-icon rounded-circle"><i class="bi bi-arrow-return-left"></i></a>
+                <a href="" class="btn btn-white btn-icon bg-grad rounded-circle"><i class="bi bi-arrow-return-left"></i></a>
               </div>
             </div>
           </div>
@@ -706,6 +782,7 @@
 
   <!-- javascript -->
   <script src="./assets/js/vendor.bundle.js"></script>
-  <script src="./assets/js/index.bundle.js"></script></body>
+  <script src="./assets/js/index.bundle.js"></script>
+</body>
 
 </html>

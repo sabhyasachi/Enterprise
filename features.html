@@ -4,27 +4,46 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
+
   <!-- Favicon -->
   <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" /> -->
-  
+
   <!-- Libs CSS -->
   <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-  
+
   <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/index.bundle.css" />
-  
+
   <!-- Title -->
-  <title>Startup</title></head>
+  <title>Startup</title>
+</head>
+
+<style>
+  .bg-grad {
+    background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+    border: none !important;
+  }
+
+  .bg-grad-hover:hover {
+    background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+  }
+
+  .text-grad {
+    background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
 
 <body>
 
 
   <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-dark bg-dark">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky  navbar-light bg-light">
     <div class="container">
-      <a href="./software.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
-  
+      <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
+
       <!-- secondary -->
       <ul class="navbar-nav navbar-nav-secondary order-lg-3">
         <li class="nav-item d-lg-none">
@@ -36,31 +55,31 @@
 
         <li class="nav-item d-none d-lg-block">
           <a class="nav-link dropdown-togge" href="#" id="navbarDropdown-1" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Login
-            </a>
+            aria-expanded="false">
+            Login
+          </a>
         </li>
-        
+
         <li class="nav-item d-none d-lg-block">
-          <a href="#" class="btn btn-outline-white rounded-pill ms-2">
+          <a href="#" class="btn bg-grad text-white rounded-pill ms-2">
             Try free
           </a>
         </li>
-        
+
       </ul>
-  
+
       <!-- primary -->
       <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
         <ul class="navbar-nav">
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="./startup.html" id="navbarDropdown-1" role="button" 
+            <a class="nav-link dropdown-toggle" href="./features.html" id="navbarDropdown-1" role="button"
               aria-expanded="false">
               Features
             </a>
-  
+
             <!-- <ul class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarDropdown-1">
               <li><a class="dropdown-item "
-                  href="./startup.html">Startup</a></li>
+                  href="./features.html">Startup</a></li>
               <li><a class="dropdown-item " href="./saas.html">Saas</a>
               </li>
               <li><a class="dropdown-item "
@@ -84,15 +103,15 @@
                   href="./course.html">Course</a>
               </li>
               <li><a class="dropdown-item "
-                  href="./service.html">Service</a></li>
+                  href="./usecases.html">Service</a></li>
               <li><a class="dropdown-item active"
-                  href="./software.html">Software</a></li>
+                  href="./index.html">Software</a></li>
               <li><a class="dropdown-item "
                   href="./documentation.html">Documentation</a></li>
             </ul> -->
           </li>
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="./service.html" id="navbarDropdown-2" role="button"
+            <a class="nav-link dropdown-toggle" href="./usecases.html" id="navbarDropdown-2" role="button"
               aria-expanded="false">
               Use cases
             </a>
@@ -225,16 +244,20 @@
           </li> -->
         </ul>
       </div>
-  
-
     </div>
   </nav>
+ <!-- mobile user menu -->
+
+
   <!-- nav Bar -->
 
   <div class="offcanvas-wrap">
 
     <!-- header -->
-    <section class="bg-secondary inverted pt-20"> 
+    <section class="bg-secondary inverted pt-20">
+      <figure class="background background-overlay"
+      style="background-image: linear-gradient(45deg, #0006, #0008), url('./assets/images/shop-1.jpg')">
+    </figure>
       <!-- style="background-image: url('./assets/images/startup-2.jpg') -->
       <div class="container foreground mt-lg-5">
         <div class="row justify-content-center">
@@ -243,7 +266,7 @@
               boost your performance.</h1>
             <div class="row justify-content-center g-1">
               <div class="col-auto">
-                <a href="" class="btn btn-white rounded-pill">Get Started</a>
+                <a href="" class="btn btn-white bg-grad rounded-pill">Get Started</a>
               </div>
               <div class="col-auto">
                 <a href="" class="btn btn-outline-white rounded-pill">Read More</a>
@@ -253,7 +276,7 @@
         </div>
         <div class="row mt-10">
           <div class="bottom-overlap" data-aos="fade-up" data-aos-delay="100">
-            <figure class="media media-image equal equal-16-9" >   
+            <figure class="media media-image equal equal-16-9">
               <span style="background-image: url('./assets/images/startup-1.jpg')">
               </span>
             </figure>
@@ -270,7 +293,7 @@
 
     <!-- features -->
     <section class="py-15 py-xl-20">
-     
+
     </section>
 
 
@@ -283,20 +306,21 @@
               screen recording</h2>
             <ul class="list-group list-group-minimal">
               <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                    src="./assets/images/logo/logo-vendor1.svg">
                 </div>
                 Screen + Camera
               </li>
 
-              
-
               <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                    src="./assets/images/logo/logo-vendor1.svg">
                 </div>
                 Screen only
               </li>
               <li class="list-group-item d-flex align-items-center">
-                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                    src="./assets/images/logo/logo-vendor1.svg">
                 </div>
                 Camera only
               </li>
@@ -325,7 +349,8 @@
               <img src="./assets/images/logo/logo-vendor.svg" alt="Screen" class="mb-4 w-20" style="height: 60px">
             </div>
             <h4 class="fs-5 mt-4">Screen</h4>
-            <p class="text-secondary mx-2">Create quality videos with a tap and boost the efficiency of your team with our revolutionary technology </p>
+            <p class="text-secondary mx-2">Create quality videos with a tap and boost the efficiency of your team with
+              our revolutionary technology </p>
             <!-- <a href="" class="underline">Learn More</a> -->
           </div>
           <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="100">
@@ -334,16 +359,19 @@
               <img src="./assets/images/logo/logo-vendor2 .svg" alt="Camera" class="mb-4 w-20" style="height: 60px">
             </div>
             <h4 class="fs-5 mt-4">Camera</h4>
-            <p class="text-secondary mx-2">Camera recording with audio and voiceover helps you deliver a personal touch for training and other purposes</p>
+            <p class="text-secondary mx-2">Camera recording with audio and voiceover helps you deliver a personal touch
+              for training and other purposes</p>
             <!-- <a href="" class="underline">Learn More</a> -->
           </div>
           <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="200">
             <!-- <i class="bi bi-collection-play fs-1 text-primary"></i> -->
             <div class="card-header pb-0">
-              <img src="./assets/images/logo/logo-vendor3.svg" alt="Screen + Camera" class="mb-4 w-20" style="height: 60px">
+              <img src="./assets/images/logo/logo-vendor3.svg" alt="Screen + Camera" class="mb-4 w-20"
+                style="height: 60px">
             </div>
             <h4 class="fs-5 mt-4">Screen + Camera</h4>
-            <p class="text-secondary mx-2">Record your screen and camera simultaneously with high quality audio recording and voiceover everything at one place </p>
+            <p class="text-secondary mx-2">Record your screen and camera simultaneously with high quality audio
+              recording and voiceover everything at one place </p>
             <!-- <a href="" class="underline">Learn More</a> -->
           </div>
         </div>
@@ -378,7 +406,7 @@
     </section> -->
 
 
-    
+
 
 
     <!-- content -->
@@ -388,33 +416,37 @@
           <div class="col-lg-8 col-xl-6">
             <div class="row g-2 gallery-1">
               <div class="col" data-aos="fade-up">
-                <figure class="media media-image equal-md-1-2" 
-                  data-bp='{"imgSrc": "./assets/images/startup-3.jpg" , "parentGalleryClass": "gallery-1" }' >
-                  <span  style="background-image: url('./assets/images/startup-3.jpg')">
+                <figure class="media media-image equal-md-1-2"
+                  <!--data-bp='{"imgSrc": "./assets/images/startup-3.jpg" , "parentGalleryClass": "gallery-1" }'> -->
+                  <span style="background-image: url('./assets/images/startup-3.jpg')">
                   </span>
-                </figure>              </div>
+                </figure>
+              </div>
               <div class="col" data-aos="fade-up" data-aos-delay="100">
-                <figure class="media media-image equal-md-1-2" 
-                  data-bp='{"imgSrc": "./assets/images/startup-4.jpg" , "parentGalleryClass": "gallery-1" }' >
-                  <span  style="background-image: url('./assets/images/startup-4.jpg')">
+                <figure class="media media-image equal-md-1-2"
+                <!--data-bp='{"imgSrc": "./assets/images/startup-3.jpg" , "parentGalleryClass": "gallery-1" }'> -->
+                  <span style="background-image: url('./assets/images/startup-4.jpg')">
                   </span>
-                </figure>              </div>
+                </figure>
+              </div>
             </div>
           </div>
           <div class="col-lg-8 col-xl-5">
             <h2>Text to video</h2>
-            <p class="text-secondary">To create interesting videos, just put your script into the Script editor. 
+            <p class="text-secondary">To create interesting videos, just put your script into the Script editor.
               Watch the AI select the most pertinent assets without exerting any effort.</p>
             <div class="row g-0">
               <div class="col-md-6">
                 <ul class="list-group list-group-minimal">
                   <li class="list-group-item d-flex align-items-center mb-1">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>
-                    Fast And Easy To Use 
+                    Fast And Easy To Use
                   </li>
                   <li class="list-group-item d-flex align-items-center mb-1">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>
                     Active transcription
                   </li>
@@ -423,12 +455,14 @@
               <div class="col-md-6">
                 <ul class="list-group list-group-minimal">
                   <li class="list-group-item d-flex align-items-center mb-1">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>
-                    Voice narration 
+                    Voice narration
                   </li>
                   <li class="list-group-item d-flex align-items-center mb-1">
-                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img src="./assets/images/logo/logo-vendor1.svg">
+                    <div class="icon-box icon-box-sm bg-opaque-white rounded-circle me-2"><img
+                        src="./assets/images/logo/logo-vendor1.svg">
                     </div>
                     Higly Compatibile
                   </li>
@@ -471,7 +505,7 @@
               <div class="col-md-6">
                 <article class="card">
                   <a href="article.html" class="card-title">
-                    <h6>Create videos instantly with zero  technical or editing skills required</h6>
+                    <h6>Create videos instantly with zero technical or editing skills required</h6>
                   </a>
                   <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
                     December</time> -->
@@ -557,65 +591,75 @@
                         </div>
                         <div class="card-footer mt-auto pt-0">
                           <h4 class="card-title">Select input source</h4>
-                          <p class="text-secondary">You can either provide the text or an image and also directly enter the script of a video to begin.</p>
+                          <p class="text-secondary">You can either provide the text or an image and also directly enter
+                            the script of a video to begin.</p>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <a  class="card equal-md-1-1 card-hover-border bg-white">
+                    <a class="card equal-md-1-1 card-hover-border bg-white">
                       <div class="card-wrap">
                         <div class="card-header pb-0">
                           <img src="./assets/images/logo/logo-vendor-2.svg" alt="Logo" class="mb-4 w-20">
                         </div>
                         <div class="card-footer pt-0 mt-auto">
                           <h4 class="card-title">View and edit content</h4>
-                          <p class="text-secondary">Customize the most relevant script for your video summary by adding or removing sentences as desired.
+                          <p class="text-secondary">Customize the most relevant script for your video summary by adding
+                            or removing sentences as desired.
                             aliquid.</p>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="col-md-6" data-aos="fade-up">
-                    <a  class="card equal-md-1-1 card-hover-border bg-white">
+                    <a class="card equal-md-1-1 card-hover-border bg-white">
                       <div class="card-wrap">
                         <div class="card-header pb-0">
                           <img src="./assets/images/logo/logo-vendor-3.svg" alt="Logo" class="mb-4 w-20">
                         </div>
                         <div class="card-footer pt-0 mt-auto">
                           <h4 class="card-title">Add music and voice-over</h4>
-                          <p class="text-secondary">Add a variety of voiceovers and background music from our repository that will suit every kind of requirements. 
+                          <p class="text-secondary">Add a variety of voiceovers and background music from our repository
+                            that will suit every kind of requirements.
                           </p>
                         </div>
                       </div>
                     </a>
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <a  class="card equal-md-1-1 card-hover-border bg-white">
+                    <a class="card equal-md-1-1 card-hover-border bg-white">
                       <div class="card-wrap">
                         <div class="card-header pb-0">
                           <img src="./assets/images/logo/logo-vendor-4.svg" alt="Logo" class="mb-4 w-20">
                         </div>
                         <div class="card-footer pt-0 mt-auto">
                           <h4 class="card-title">Preview, create and share </h4>
-                          <p class="text-secondary">You can preview the video to see how it looks, and then create, share and download as per your needs.</p>
+                          <p class="text-secondary">You can preview the video to see how it looks, and then create,
+                            share and download as per your needs.</p>
                         </div>
                       </div>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade inverted" id="component-1-2" role="tabpanel" aria-labelledby="component-1-2-tab">
+              <div class="tab-pane fade inverted" id="component-1-2" role="tabpanel"
+                aria-labelledby="component-1-2-tab">
                 <h5>View and edit content</h5>
-                <p>Customize the most relevant script for your video summary by adding or removing sentences as desired.</p>
+                <p>Customize the most relevant script for your video summary by adding or removing sentences as desired.
+                </p>
               </div>
-              <div class="tab-pane fade inverted" id="component-1-3" role="tabpanel" aria-labelledby="component-1-3-tab">
+              <div class="tab-pane fade inverted" id="component-1-3" role="tabpanel"
+                aria-labelledby="component-1-3-tab">
                 <h5>Add music and voice-over</h5>
-                <p>Add a variety of voiceovers and background music from our repository that will suit every kind of requirement </p>
+                <p>Add a variety of voiceovers and background music from our repository that will suit every kind of
+                  requirement </p>
               </div>
-              <div class="tab-pane fade inverted" id="component-1-4" role="tabpanel" aria-labelledby="component-1-4-tab">
+              <div class="tab-pane fade inverted" id="component-1-4" role="tabpanel"
+                aria-labelledby="component-1-4-tab">
                 <h5>Preview, create and share </h5>
-                <p>You can preview the video to see how it looks, and then create, share and download as per your needs.</p>
+                <p>You can preview the video to see how it looks, and then create, share and download as per your needs.
+                </p>
               </div>
             </div>
           </div>
@@ -654,7 +698,7 @@
       <div class="container">
         <div class="row g-4 g-lg-4 mb-10">
           <div class="col-md-3 text-center text-md-start">
-            <a href="./index.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
+            <a href="./home.html" class="navbar-brand"><img src="./assets/images/logo/logo-dark.svg" alt="Logo"></a>
           </div>
           <div class="col-md-4 col-lg-2 text-center text-md-start">
             <ul class="list-unstyled">
@@ -662,7 +706,7 @@
               <li class="mb-1"><a href="" class="text-reset text-primary-hover">Home</a></li>
               <li class="mb-1"><a href="" class="text-reset text-primary-hover">Login/Signup</a></li>
               <li class="mb-1"><a href="" class="text-reset text-primary-hover">Contact Us</a></li>
-              
+
             </ul>
           </div>
           <div class="col-md-4 col-lg-2 text-center text-md-start">
@@ -670,7 +714,7 @@
               <li class="mb-1"><a href="" class="text-reset text-primary-hover"><b>Features</b></a></li>
               <li class="mb-1"><a href="" class="text-reset text-primary-hover">Recording</a></li>
               <li class="mb-1"><a href="" class="text-reset text-primary-hover">Text to video</a></li>
-              
+
             </ul>
           </div>
           <div class="col-md-4 col-lg-2 text-center text-md-start">
@@ -693,7 +737,7 @@
                     placeholder="Your email">
                 </div>
                 <div class="col-auto">
-                  <a href="" class="btn btn-primary btn-icon rounded-circle"><i class="bi bi-arrow-return-left"></i></a>
+                  <a href="" class="btn btn-primary btn-icon bg-grad rounded-circle"><i class="bi bi-arrow-return-left"></i></a>
                 </div>
               </div>
             </div>
@@ -715,13 +759,15 @@
           </div>
         </div>
       </div>
-    </footer>  </div>
+    </footer>
+  </div>
 
 
 
 
   <!-- javascript -->
   <script src="./assets/js/vendor.bundle.js"></script>
-  <script src="./assets/js/index.bundle.js"></script></body>
+  <script src="./assets/js/index.bundle.js"></script>
+</body>
 
 </html>
