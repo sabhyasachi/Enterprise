@@ -23,11 +23,17 @@
     background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
     border: none !important;
   }
+  .bg-grey {
+    background: #ADB5BD;
+    border: none !important;
+  }
 
   .bg-grad-hover:hover {
     background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
   }
-
+  .bg-white-hover:hover {
+    background: #ffffff;
+  }
   .text-grad {
     background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
     background-clip: text;
@@ -40,9 +46,9 @@
 
 
   <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky  navbar-light bg-light">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky  navbar-dark bg-dark">
     <div class="container">
-      <a href="./index.html" class="navbar-brand"><img src="./assets/images/proshort1.svg" alt="Logo"></a>
+      <a href="./index.html" class="navbar-brand"><img src="./assets/images/proshort2.svg" alt="Logo"></a>
 
       <!-- secondary -->
       <ul class="navbar-nav navbar-nav-secondary order-lg-3">
@@ -61,8 +67,9 @@
         </li>
 
         <li class="nav-item d-none d-lg-block">
-          <a href="#" class="btn bg-grad text-white rounded-pill ms-2">
-            Try free
+          <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 " >
+            Try free 
+            <i class="mx-1 bi bi-arrow-right"></i>
           </a>
         </li>
 
@@ -72,7 +79,7 @@
       <div class="collapse navbar-collapse" id="navbar" data-bs-parent="#mainNav">
         <ul class="navbar-nav">
           <li class="nav-item dropdown dropdown-hover">
-            <a class="nav-link dropdown-toggle" href="./features.html" id="navbarDropdown-1" role="button"
+            <a class="nav-link dropdown-toggle active" href="./features.html" id="navbarDropdown-1" role="button"
               aria-expanded="false">
               Features
             </a>
@@ -266,10 +273,13 @@
               boost your performance.</h1>
             <div class="row justify-content-center g-1">
               <div class="col-auto">
-                <a href="" class="btn btn-white bg-grad rounded-pill">Get Started</a>
+                <a href="" class="btn btn-white text-white bg-grad rounded-pill">Try for free <i class="mx-1 bi bi-arrow-right"></i></a>
               </div>
               <div class="col-auto">
-                <a href="" class="btn btn-outline-white rounded-pill">Read More</a>
+                <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 " >
+                  read more
+                  <i class="mx-1 bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -298,7 +308,7 @@
 
 
     <!-- features -->
-    <section class="bg-black mx-xl-3">
+    <section class="bg-black mx-xl-3" class="screen_recording">
       <div class="container py-15 pb-10 py-xl-20 level-3">
         <div class="row">
           <div class="col-lg-6 inverted">
@@ -340,37 +350,37 @@
       </div>
     </section>
 
-    <section class="py-15 py-xl-20">
+    <section class="py-10 py-xl-10">
       <div class="container mt-10">
         <div class="row g-5">
-          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up">
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up">
             <!-- <i class="bi bi-layers fs-1 text-primary"></i> -->
-            <div class="card-header pb-0">
+            <div class=" pb-0">
               <img src="./assets/images/logo/logo-vendor.svg" alt="Screen" class="mb-4 w-20" style="height: 60px">
             </div>
             <h4 class="fs-5 mt-4">Screen</h4>
-            <p class="text-secondary mx-2">Create quality videos with a tap and boost the efficiency of your team with
+            <p class="text-secondary ">Create quality videos with a tap and boost the efficiency of your team with
               our revolutionary technology </p>
             <!-- <a href="" class="underline">Learn More</a> -->
           </div>
-          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
             <!-- <i class="bi bi-type fs-1 text-primary"></i> -->
-            <div class="card-header pb-0">
+            <div class=" pb-0">
               <img src="./assets/images/logo/logo-vendor2 .svg" alt="Camera" class="mb-4 w-20" style="height: 60px">
             </div>
             <h4 class="fs-5 mt-4">Camera</h4>
-            <p class="text-secondary mx-2">Camera recording with audio and voiceover helps you deliver a personal touch
+            <p class="text-secondary ">Camera recording with audio and voiceover helps you deliver a personal touch
               for training and other purposes</p>
             <!-- <a href="" class="underline">Learn More</a> -->
           </div>
-          <div class="col-md-6 col-lg-4 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="200">
             <!-- <i class="bi bi-collection-play fs-1 text-primary"></i> -->
-            <div class="card-header pb-0">
+            <div class=" pb-0">
               <img src="./assets/images/logo/logo-vendor3.svg" alt="Screen + Camera" class="mb-4 w-20"
                 style="height: 60px">
             </div>
             <h4 class="fs-5 mt-4">Screen + Camera</h4>
-            <p class="text-secondary mx-2">Record your screen and camera simultaneously with high quality audio
+            <p class="text-secondary ">Record your screen and camera simultaneously <br> with high quality audio
               recording and voiceover everything at one place </p>
             <!-- <a href="" class="underline">Learn More</a> -->
           </div>
@@ -410,14 +420,14 @@
 
 
     <!-- content -->
-    <section class="py-15 py-xl-20 bg-black inverted">
+    <section class="py-15 py-xl-20 bg-black inverted" class="text_to_video">
       <div class="container">
         <div class="row align-items-center justify-content-center justify-content-xl-between">
           <div class="col-lg-8 col-xl-6">
             <div class="row g-2 gallery-1">
               <div class="col" data-aos="fade-up">
                 <figure class="media media-image equal-md-1-2"
-                  <!--data-bp='{"imgSrc": "./assets/images/startup-3.jpg" , "parentGalleryClass": "gallery-1" }'> -->
+                  <!-- data-bp='{"imgSrc": "./assets/images/startup-3.jpg" , "parentGalleryClass": "gallery-1" }'> -->
                   <span style="background-image: url('./assets/images/startup-3.jpg')">
                   </span>
                 </figure>
@@ -505,7 +515,7 @@
               <div class="col-md-6">
                 <article class="card">
                   <a class="card-title">
-                    <h6>Create videos instantly with zero technical or editing skills required</h6>
+                    <h7>Create videos instantly with zero technical or editing skills required</h7>
                   </a>
                   <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
                     December</time> -->
@@ -514,7 +524,7 @@
               <div class="col-md-6">
                 <article class="card">
                   <a class="card-title">
-                   Use our realistic AI voices and music and let us do the talking </h6>
+                  <h7>Use our realistic AI voices and music and let us do the talking </h7>
                   </a>
                   <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
                     December</time> -->
@@ -523,7 +533,7 @@
               <div class="col-md-6">
                 <article class="card">
                   <a class="card-title">
-                    <h6>Get instant transcript and communicate with video without losing the flexibility of text.</h6>
+                    <h7>Get instant transcript and communicate with video without losing the flexibility of text.</h7>
                   </a>
                   <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
                     December</time> -->
@@ -532,7 +542,7 @@
               <div class="col-md-6">
                 <article class="card">
                   <a class="card-title">
-                    <h6>Proshort runs over the cloud servers, You can login and start using anywhere and anytime </h6>
+                    <h7>Proshort runs over the cloud servers, You can login and start using anywhere and anytime </h7>
                   </a>
                   <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
                     December</time> -->
@@ -561,17 +571,17 @@
                   aria-selected="true">Input</button>
               </li>
               <li class="nav-item">
-                <button class="nav-link fs-5" id="component-1-2-tab" data-bs-toggle="pill"
+                <button class="nav-link fs-5 inverted" id="component-1-2-tab" data-bs-toggle="pill"
                   data-bs-target="#component-1-2" type="button" role="tab" aria-controls="component-1-2"
                   aria-selected="false">Scenes</button>
               </li>
               <li class="nav-item">
-                <button class="nav-link fs-5" id="component-1-3-tab" data-bs-toggle="pill"
+                <button class="nav-link fs-5 inverted" id="component-1-3-tab" data-bs-toggle="pill"
                   data-bs-target="#component-1-3" type="button" role="tab" aria-controls="component-1-3"
                   aria-selected="false">Output</button>
               </li>
               <li class="nav-item">
-                <button class="nav-link fs-5" id="component-1-4-tab" data-bs-toggle="pill"
+                <button class="nav-link fs-5 inverted" id="component-1-4-tab" data-bs-toggle="pill"
                   data-bs-target="#component-1-4" type="button" role="tab" aria-controls="component-1-4"
                   aria-selected="false">Publish</button>
               </li>
@@ -581,11 +591,12 @@
             <div class="tab-content" id="component-1-content">
               <div class="tab-pane fade show active" id="component-1-1" role="tabpanel"
                 aria-labelledby="component-1-1-tab">
-                <div class="row g-3 g-xl-5">
+                <div class="row g-3 g-xl-5 ">
                   <div class="col-md-6" data-aos="fade-up">
+                      
                     <a class="card equal-md-1-1 card-hover-border bg-white">
                       <!-- <a href="#" class="card equal-md-1-1 card-hover-border bg-white"></a> -->
-                      <div class="card-wrap">
+                      <div class="card-wrap bg-grey bg-white-hover">
                         <div class="card-header pb-0">
                           <img src="./assets/images/logo/logo-vendor-1.svg" alt="Logo" class="mb-4 w-20">
                         </div>
@@ -599,7 +610,7 @@
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <a class="card equal-md-1-1 card-hover-border bg-white">
-                      <div class="card-wrap">
+                      <div class="card-wrap bg-grey bg-white-hover">
                         <div class="card-header pb-0">
                           <img src="./assets/images/logo/logo-vendor-2.svg" alt="Logo" class="mb-4 w-20">
                         </div>
@@ -614,7 +625,7 @@
                   </div>
                   <div class="col-md-6" data-aos="fade-up">
                     <a class="card equal-md-1-1 card-hover-border bg-white">
-                      <div class="card-wrap">
+                      <div class="card-wrap bg-grey bg-white-hover">
                         <div class="card-header pb-0">
                           <img src="./assets/images/logo/logo-vendor-3.svg" alt="Logo" class="mb-4 w-20">
                         </div>
@@ -629,7 +640,7 @@
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <a class="card equal-md-1-1 card-hover-border bg-white">
-                      <div class="card-wrap">
+                      <div class="card-wrap bg-grey bg-white-hover">
                         <div class="card-header pb-0">
                           <img src="./assets/images/logo/logo-vendor-4.svg" alt="Logo" class="mb-4 w-20">
                         </div>
@@ -746,16 +757,18 @@
         <div class="row align-items-center g-1 g-lg-6 text-muted">
           <div class="col-md-6 col-lg-5 order-lg-2 text-center text-md-start">
             <ul class="list-inline small">
-              <li class="list-inline-item"><a href="" class="text-reset text-primary-hover">facebook</a></li>
-              <li class="list-inline-item ms-1"><a href="" class="text-reset text-primary-hover">twitter</a></li>
-              <li class="list-inline-item ms-1"><a href="" class="text-reset text-primary-hover">linkedin</a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/proshort_videos/" class="text-reset text-primary-hover">Instagram</a></li>
+              <li class="list-inline-item ms-1"><a href="https://twitter.com/proshort_ai" class="text-reset text-primary-hover">twitter</a></li>
+              <li class="list-inline-item ms-1"><a href="https://www.linkedin.com/company/proshort/mycompany/" class="text-reset text-primary-hover">linkedin</a></li>
             </ul>
           </div>
+          
           <div class="col-md-6 col-lg-4 text-center text-md-end order-lg-3">
-            <span class="small">5th Avenue, New York USA 10255</span>
+            <span class="small">Proshort India Pvt Ltd
+CoWrks, Ecoworld, Ground Floor, Bay Area 6A, Bengaluru – 560103</span>
           </div>
           <div class="col-lg-3 order-lg-1 text-center text-md-start">
-            <p class="small">Copyrights © 2021</p>
+            <p class="small">Copyrights © 2022</p>
           </div>
         </div>
       </div>
