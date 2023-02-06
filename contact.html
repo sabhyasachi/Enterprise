@@ -22,6 +22,10 @@
       background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
       border: none !important;
     }
+    .bg-grey {
+      background: #E9ECEF;
+      border: none !important;
+    }
   
     .bg-grad-hover:hover {
       background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
@@ -33,13 +37,40 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  
+    .grad-border {
+      position: relative;
+      background: #222;
+      border: none !important;
+    }
+  
+    .grad-border::after {
+      position: absolute;
+      top: -2px;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      left: -2px;
+      border-radius: 100px;
+      content: '';
+      z-index: -1;
+      background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+    }
+  
+    .sticky {
+      position: sticky;
+      top: 0;
+    }
+  
+    .navbar {
+      padding: 25px 0 !important;
+    }
   </style>
   
   <body>
   
   
     <!-- navbar -->
-    <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky  navbar-dark bg-dark">
+    <nav id="mainNav" class="navbar navbar-expand-lg sticky navbar-dark bg-dark">
       <div class="container">
         <a href="./index.html" class="navbar-brand"><img src="./assets/images/proshort2.svg" alt="Logo"></a>
   
@@ -60,7 +91,7 @@
           </li>
   
           <li class="nav-item d-none d-lg-block">
-            <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 " >
+            <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 grad-border" >
               Try free 
               <i class="mx-1 bi bi-arrow-right"></i>
             </a>
@@ -170,11 +201,11 @@
                 </div>
               </div> -->
             </li>
-            <li class="nav-item dropdown dropdown-hover">
+            <!-- <li class="nav-item dropdown dropdown-hover">
               <a class="nav-link dropdown-toggle" href="./pricing.html" id="navbarDropdown-3" role="button"
                 aria-expanded="false" data-bs-auto-close="outside">
                 Pricing
-              </a>
+              </a> -->
               <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
                 <li><a class="dropdown-item "
                     href="./account.html">Dashboard</a></li>
@@ -272,6 +303,10 @@
               +1 234 56 78 90
             </li> -->
             <li class="list-group-item d-flex align-items-center">
+              <span class="w-25 text-muted">LinkedIn</span>
+              @proshort
+            </li>
+            <li class="list-group-item d-flex align-items-center">
               <span class="w-25 text-muted">Instagram</span>
               @proshort_ai
             </li>
@@ -286,8 +321,8 @@
           <div class="media equal-1-1">
             <div id="map1" class="map"></div>
           </div>
-          <div class="card bg-black text-white">
-            <div class="card"> <br>
+          <div class="card bg-grad text-white ">  
+            <div class="card p-2">
               <h5>Proshort India Pvt Ltd,
                 CoWrks, Ecoworld Ground Floor, Bay Area 6A <span class="font-weight-bold d-block">Bengaluru – 560103</span></h5>
             </div>
@@ -298,7 +333,7 @@
   </section>
 
   <!-- contact -->
-  <section class="py-15 py-xl-20 border-top">
+  <section class="py-15 py-xl-15 border-top">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 mb-5">
@@ -329,7 +364,8 @@
               </div>
             </div>
             <div class="col-md-12">
-              <a href="" class="btn btn-block btn-primary rounded-pill">Get in touch</a>
+              <a href="" class="btn btn-lg bg-grad text-white btn-with-icon rounded-pill">Get in Touch <i
+                class="bi bi-arrow-right"></i></a>
             </div>
           </form>
         </div>

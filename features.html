@@ -24,29 +24,53 @@
     border: none !important;
   }
   .bg-grey {
-    background: #ADB5BD;
+    background: #E9ECEF;
     border: none !important;
   }
 
   .bg-grad-hover:hover {
     background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
   }
-  .bg-white-hover:hover {
-    background: #ffffff;
-  }
+
   .text-grad {
     background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-</style>
 
+  .grad-border {
+    position: relative;
+    background: #222;
+    border: none !important;
+  }
+
+  .grad-border::after {
+    position: absolute;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    left: -2px;
+    border-radius: 100px;
+    content: '';
+    z-index: -1;
+    background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar {
+    padding: 25px 0 !important;
+  }
+</style>
 <body>
 
 
   <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky  navbar-dark bg-dark">
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky navbar-dark bg-dark">
     <div class="container">
       <a href="./index.html" class="navbar-brand"><img src="./assets/images/proshort2.svg" alt="Logo"></a>
 
@@ -67,7 +91,7 @@
         </li>
 
         <li class="nav-item d-none d-lg-block">
-          <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 " >
+          <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 grad-border" >
             Try free 
             <i class="mx-1 bi bi-arrow-right"></i>
           </a>
@@ -177,11 +201,11 @@
               </div>
             </div> -->
           </li>
-          <li class="nav-item dropdown dropdown-hover">
+          <!-- <li class="nav-item dropdown dropdown-hover">
             <a class="nav-link dropdown-toggle" href="./pricing.html" id="navbarDropdown-3" role="button"
               aria-expanded="false" data-bs-auto-close="outside">
               Pricing
-            </a>
+            </a> -->
             <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
               <li><a class="dropdown-item "
                   href="./account.html">Dashboard</a></li>
@@ -263,7 +287,7 @@
     <!-- header -->
     <section class="bg-secondary inverted pt-20">
       <figure class="background background-overlay"
-      style="background-image: linear-gradient(45deg, #0006, #0008), url('./assets/images/shop-1.jpg')">
+      style="background-image: linear-gradient(45deg, #0006, #0008), url('./assets/images/shop-1.jpg'); background-attachment: fixed;">
     </figure>
       <!-- style="background-image: url('./assets/images/startup-2.jpg') -->
       <div class="container foreground mt-lg-5">
@@ -277,7 +301,7 @@
               </div>
               <div class="col-auto">
                 <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 " >
-                  read more
+                  Read more
                   <i class="mx-1 bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -286,9 +310,9 @@
         </div>
         <div class="row mt-10">
           <div class="bottom-overlap" data-aos="fade-up" data-aos-delay="100">
-            <figure class="media media-image equal equal-16-9">
+            <!-- <figure class="media media-image equal equal-16-9">
               <span style="background-image: url('./assets/images/startup-1.jpg')">
-              </span>
+              </span> -->
             </figure>
           </div>
         </div>
@@ -302,7 +326,7 @@
 
 
     <!-- features -->
-    <section class="py-15 py-xl-20">
+    <section class="py-15 py-xl-10">
 
     </section>
 
@@ -312,7 +336,7 @@
       <div class="container py-15 pb-10 py-xl-20 level-3">
         <div class="row">
           <div class="col-lg-6 inverted">
-            <h2 class="fw-bold">Create video by
+            <h2 class="fw-bold">Create video by <br>
               screen recording</h2>
             <ul class="list-group list-group-minimal">
               <li class="list-group-item d-flex align-items-center">
@@ -350,7 +374,7 @@
       </div>
     </section>
 
-    <section class="py-10 py-xl-10">
+    <section class="py-0 py-xl-15">
       <div class="container mt-10">
         <div class="row g-5">
           <div class="col-md-6 col-lg-4 " data-aos="fade-up">
@@ -387,7 +411,200 @@
         </div>
       </div>
     </section>
+    <section class="py-15 py-xl-15 bg-dark">
+      <div class="container">
+        <div class="row mb-10">
+          <div class="col">
+            <h2 class="fw-bold inverted">Steps to use screen recording tool </h2>
+          </div>
+        </div>
+        <div class="row g-3 g-xl-5 justify-content-between">
+          <div class="col-xl-4">
+            <ul class="nav nav-tabs flex-xl-column" id="component-1" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link fs-5 active inverted" id="component-1-1-tab" data-bs-toggle="pill"
+                  data-bs-target="#component-1-1" type="button" role="tab" aria-controls="component-1-1"
+                  aria-selected="true">Input</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link fs-5 inverted" id="component-1-2-tab" data-bs-toggle="pill"
+                  data-bs-target="#component-1-2" type="button" role="tab" aria-controls="component-1-2"
+                  aria-selected="false">Scenes</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link fs-5 inverted" id="component-1-3-tab" data-bs-toggle="pill"
+                  data-bs-target="#component-1-3" type="button" role="tab" aria-controls="component-1-3"
+                  aria-selected="false">Output</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link fs-5 inverted" id="component-1-4-tab" data-bs-toggle="pill"
+                  data-bs-target="#component-1-4" type="button" role="tab" aria-controls="component-1-4"
+                  aria-selected="false">Publish</button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-8">
+            <div class="tab-content" id="component-1-content">
+              <div class="tab-pane fade show active" id="component-1-1" role="tabpanel"
+                aria-labelledby="component-1-1-tab">
+                <div class="row g-3 g-xl-5 ">
+                  <div class="col-md-6" data-aos="fade-up">
+                      
+                    <a class="card equal-md-1-1 card-hover-border bg-white">
+                      <!-- <a href="#" class="card equal-md-1-1 card-hover-border bg-white"></a> -->
+                      <div class="card-wrap bg-grey bg-white-hover">
+                        <div class="card-header pb-0">
+                          <img src="./assets/images/logo/logo-vendor-1.svg" alt="Logo" class="mb-4 w-20">
+                        </div>
+                        <div class="card-footer mt-auto pt-0">
+                          <h4 class="card-title">Select input source</h4>
+                          <p class="text-secondary">You can either provide the text or an image and also directly enter
+                            the script of a video to begin.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a class="card equal-md-1-1 card-hover-border bg-white">
+                      <div class="card-wrap bg-grey bg-white-hover">
+                        <div class="card-header pb-0">
+                          <img src="./assets/images/logo/logo-vendor-2.svg" alt="Logo" class="mb-4 w-20">
+                        </div>
+                        <div class="card-footer pt-0 mt-auto">
+                          <h4 class="card-title">View and edit content</h4>
+                          <p class="text-secondary">Customize the most relevant script for your video summary by adding
+                            or removing sentences as desired.
+                            aliquid.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up">
+                    <a class="card equal-md-1-1 card-hover-border bg-white">
+                      <div class="card-wrap bg-grey bg-white-hover">
+                        <div class="card-header pb-0">
+                          <img src="./assets/images/logo/logo-vendor-3.svg" alt="Logo" class="mb-4 w-20">
+                        </div>
+                        <div class="card-footer pt-0 mt-auto">
+                          <h4 class="card-title">Add music and voice-over</h4>
+                          <p class="text-secondary">Add a variety of voiceovers and background music from our repository
+                            that will suit every kind of requirements.
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a class="card equal-md-1-1 card-hover-border bg-white">
+                      <div class="card-wrap bg-grey bg-white-hover">
+                        <div class="card-header pb-0">
+                          <img src="./assets/images/logo/logo-vendor-4.svg" alt="Logo" class="mb-4 w-20">
+                        </div>
+                        <div class="card-footer pt-0 mt-auto">
+                          <h4 class="card-title">Preview, create and share </h4>
+                          <p class="text-secondary">You can preview the video to see how it looks, and then create,
+                            share and download as per your needs.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade inverted" id="component-1-2" role="tabpanel"
+                aria-labelledby="component-1-2-tab">
+                <h5>View and edit content</h5>
+                <p>Customize the most relevant script for your video summary by adding or removing sentences as desired.
+                </p>
+              </div>
+              <div class="tab-pane fade inverted" id="component-1-3" role="tabpanel"
+                aria-labelledby="component-1-3-tab">
+                <h5>Add music and voice-over</h5>
+                <p>Add a variety of voiceovers and background music from our repository that will suit every kind of
+                  requirement </p>
+              </div>
+              <div class="tab-pane fade inverted" id="component-1-4" role="tabpanel"
+                aria-labelledby="component-1-4-tab">
+                <h5>Preview, create and share </h5>
+                <p>You can preview the video to see how it looks, and then create, share and download as per your needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+       <!-- blog -->
+       <section class="py-15 py-xl-15 ">
+        <div class="container">
+          <div class="row align-items-end">
+            <div class="col-md-6">
+              <h2 class="fs-5 fw-normal">Advantages</h2>
+            </div>
+            <!-- <div class="col-md-6 text-md-end">
+              <a href="" class="eyebrow action underline">View all <i class="bi bi-arrow-right"></i></a>
+            </div> -->
+          </div>
+          <div class="row">
+            <div class="col">
+              <hr class="mt-3 mb-10">
+            </div>
+          </div>
+          <div class="row g-4 g-xl-6 align-items-start justify-content-between">
+            <div class="col-lg-5">
+              <article class="card">
+                <a class="card-title">
+                  <h3 class="fs-3">Create High Quality Video+ Screen Recordings for high productivity</h3>
+                </a>
+                <!-- <time datetime="2020-12-20 21:30" class="eyebrow text-muted">21:30, 20 December</time>
+              </article> -->
+            </div>
+            <div class="col-lg-6">
+              <div class="row g-4 g-xl-6" data-masonry>
+                <div class="col-md-6">
+                  <article class="card">
+                    <a class="card-title">
+                      <h7>Cut down on time consuming meetings by a significant amount </h7>
+                    </a>
+                    <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                      December</time> -->
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="card">
+                    <a class="card-title">
+                    <h7>Save for future use, watch anytime, any where with easy sharing</h7>
+                    </a>
+                    <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                      December</time> -->
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="card">
+                    <a class="card-title">
+                      <h7>It runs over the cloud servers,so login and start using anywhere and anytime </h7>
+                    </a>
+                    <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                      December</time> -->
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="card">
+                    <a class="card-title">
+                      <h7>No more hassling with finding the right meeting time, start working asynchronously</h7>
+                    </a>
+                    <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                      December</time> -->
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- tabs -->
+     
 
     <!-- logo -->
     <!-- <section class="py-10 py-xl-15">
@@ -426,15 +643,15 @@
           <div class="col-lg-8 col-xl-6">
             <div class="row g-2 gallery-1">
               <div class="col" data-aos="fade-up">
-                <figure class="media media-image equal-md-1-2"
-                  <!-- data-bp='{"imgSrc": "./assets/images/startup-3.jpg" , "parentGalleryClass": "gallery-1" }'> -->
+                <figure class="media media-image equal-md-1-1"
+                 
                   <span style="background-image: url('./assets/images/startup-3.jpg')">
                   </span>
                 </figure>
               </div>
               <div class="col" data-aos="fade-up" data-aos-delay="100">
-                <figure class="media media-image equal-md-1-2"
-                <!--data-bp='{"imgSrc": "./assets/images/startup-3.jpg" , "parentGalleryClass": "gallery-1" }'> -->
+                <figure class="media media-image equal-md-1-1"
+               
                   <span style="background-image: url('./assets/images/startup-4.jpg')">
                   </span>
                 </figure>
@@ -484,78 +701,46 @@
       </div>
     </section>
 
-
-    <!-- blog -->
-    <section class="py-15 py-xl-20 ">
-      <div class="container">
-        <div class="row align-items-end">
-          <div class="col-md-6">
-            <h2 class="fs-5 fw-normal">Advantages</h2>
-          </div>
-          <!-- <div class="col-md-6 text-md-end">
-            <a href="" class="eyebrow action underline">View all <i class="bi bi-arrow-right"></i></a>
-          </div> -->
-        </div>
-        <div class="row">
-          <div class="col">
-            <hr class="mt-3 mb-10">
-          </div>
-        </div>
-        <div class="row g-4 g-xl-6 align-items-start justify-content-between">
-          <div class="col-lg-5">
-            <article class="card">
-              <a class="card-title">
-                <h3 class="fs-3">Creating immersive experiences through video in minutes</h3>
-              </a>
-              <!-- <time datetime="2020-12-20 21:30" class="eyebrow text-muted">21:30, 20 December</time>
-            </article> -->
-          </div>
-          <div class="col-lg-6">
-            <div class="row g-4 g-xl-6" data-masonry>
-              <div class="col-md-6">
-                <article class="card">
-                  <a class="card-title">
-                    <h7>Create videos instantly with zero technical or editing skills required</h7>
-                  </a>
-                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
-                    December</time> -->
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="card">
-                  <a class="card-title">
-                  <h7>Use our realistic AI voices and music and let us do the talking </h7>
-                  </a>
-                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
-                    December</time> -->
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="card">
-                  <a class="card-title">
-                    <h7>Get instant transcript and communicate with video without losing the flexibility of text.</h7>
-                  </a>
-                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
-                    December</time> -->
-                </article>
-              </div>
-              <div class="col-md-6">
-                <article class="card">
-                  <a class="card-title">
-                    <h7>Proshort runs over the cloud servers, You can login and start using anywhere and anytime </h7>
-                  </a>
-                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
-                    December</time> -->
-                </article>
-              </div>
+    <section class="py-0 py-xl-15">
+      <div class="container mt-10">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up">
+            <!-- <i class="bi bi-layers fs-1 text-primary"></i> -->
+            <div class=" pb-0">
+              <img src="./assets/images/logo/logo-vendor.svg" alt="Screen" class="mb-4 w-20" style="height: 60px">
             </div>
+            <h4 class="fs-5 mt-4">Scene</h4>
+            <p class="text-secondary ">Create quality videos with a tap and boost the efficiency of your team with our revolutionary technology </p>
+            <!-- <a href="" class="underline">Learn More</a> -->
+          </div>
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="100">
+            <!-- <i class="bi bi-type fs-1 text-primary"></i> -->
+            <div class=" pb-0">
+              <img src="./assets/images/logo/logo-vendor2 .svg" alt="Camera" class="mb-4 w-20" style="height: 60px">
+            </div>
+            <h4 class="fs-5 mt-4">Voice-over</h4>
+            <p class="text-secondary ">Camera recording with audio and voiceover helps you deliver a personal touch for training and other purposes</p>
+            <!-- <a href="" class="underline">Learn More</a> -->
+          </div>
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="200">
+            <!-- <i class="bi bi-collection-play fs-1 text-primary"></i> -->
+            <div class=" pb-0">
+              <img src="./assets/images/logo/logo-vendor3.svg" alt="Screen + Camera" class="mb-4 w-20"
+                style="height: 60px">
+            </div>
+            <h4 class="fs-5 mt-4">Templates</h4>
+            <p class="text-secondary ">Record your screen and camera simultaneously <br> with high quality audio
+              recording and voiceover everything at one place </p>
+            <!-- <a href="" class="underline">Learn More</a> -->
           </div>
         </div>
       </div>
     </section>
 
+
+   
     <!-- tabs -->
-    <section class="py-15 py-xl-20 bg-dark">
+    <section class="py-15 py-xl-15 bg-dark">
       <div class="container">
         <div class="row mb-10">
           <div class="col">
@@ -677,6 +862,76 @@
         </div>
       </div>
     </section>
+
+     <!-- blog -->
+     <section class="py-15 py-xl-15 ">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-md-6">
+            <h2 class="fs-5 fw-normal">Advantages</h2>
+          </div>
+          <!-- <div class="col-md-6 text-md-end">
+            <a href="" class="eyebrow action underline">View all <i class="bi bi-arrow-right"></i></a>
+          </div> -->
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr class="mt-3 mb-10">
+          </div>
+        </div>
+        <div class="row g-4 g-xl-6 align-items-start justify-content-between">
+          <div class="col-lg-5">
+            <article class="card">
+              <a class="card-title">
+                <h3 class="fs-3">Creating immersive experiences through video in minutes</h3>
+              </a>
+              <!-- <time datetime="2020-12-20 21:30" class="eyebrow text-muted">21:30, 20 December</time>
+            </article> -->
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-4 g-xl-6" data-masonry>
+              <div class="col-md-6">
+                <article class="card">
+                  <a class="card-title">
+                    <h7>Create videos instantly with zero technical or editing skills required</h7>
+                  </a>
+                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                    December</time> -->
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card">
+                  <a class="card-title">
+                  <h7>Use our realistic AI voices and music and let us do the talking </h7>
+                  </a>
+                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                    December</time> -->
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card">
+                  <a class="card-title">
+                    <h7>Get instant transcript and communicate with video without losing the flexibility of text.</h7>
+                  </a>
+                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                    December</time> -->
+                </article>
+              </div>
+              <div class="col-md-6">
+                <article class="card">
+                  <a class="card-title">
+                    <h7>Proshort runs over the cloud servers, You can login and start using anywhere and anytime </h7>
+                  </a>
+                  <!-- <time datetime="2020-12-18 20:00" class="eyebrow text-muted">20:00, 18
+                    December</time> -->
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- cta -->
     <!-- <section class="py-15 py-xl-20">
       <div class="container">
@@ -705,7 +960,7 @@
 
 
     <!-- footer -->
-    <footer class="py-15 py-xl-20">
+    <footer class="py-15 py-xl-15 bg-grey">
       <div class="container">
         <div class="row g-4 g-lg-4 mb-10">
           <div class="col-md-3 text-center text-md-start">

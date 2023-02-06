@@ -23,6 +23,10 @@
     background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
     border: none !important;
   }
+  .bg-grey {
+    background: #E9ECEF;
+    border: none !important;
+  }
 
   .bg-grad-hover:hover {
     background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
@@ -34,13 +38,40 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .grad-border {
+    position: relative;
+    background: #222;
+    border: none !important;
+  }
+
+  .grad-border::after {
+    position: absolute;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    left: -2px;
+    border-radius: 100px;
+    content: '';
+    z-index: -1;
+    background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+  }
+
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar {
+    padding: 25px 0 !important;
+  }
 </style>
 
 <body>
 
 
   <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky  navbar-dark bg-dark">
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky navbar-dark bg-dark">
     <div class="container">
       <a href="./index.html" class="navbar-brand"><img src="./assets/images/proshort2.svg" alt="Logo"></a>
 
@@ -61,7 +92,7 @@
         </li>
 
         <li class="nav-item d-none d-lg-block">
-          <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 " >
+          <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 grad-border" >
             Try free 
             <i class="mx-1 bi bi-arrow-right"></i>
           </a>
@@ -171,10 +202,10 @@
               </div>
             </div> -->
           </li>
-          <li class="nav-item dropdown dropdown-hover">
+          <!-- <li class="nav-item dropdown dropdown-hover">
             <a class="nav-link dropdown-toggle" href="./pricing.html" id="navbarDropdown-3" role="button"
               aria-expanded="false" data-bs-auto-close="outside">
-              Pricing
+              Pricing -->
             </a>
             <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
               <li><a class="dropdown-item "
@@ -309,7 +340,7 @@
 
 
   <!-- features -->
-  <section class="py-15 py-xl-20" id="home">
+  <section class="py-15 py-xl-15" id="home">
     <div class="container">
       <div class="row justify-content-center mb-10">
         <div class="col-lg-6 text-center">
@@ -367,7 +398,7 @@
 
   <section class="bg-dark">
     <!-- browser -->
-    <section class="py-15 py-xl-20 border-top">
+    <section class="py-15 py-xl-15 border-top">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-lg-6 inverted" data-aos="fade-up">
@@ -537,7 +568,7 @@
 
 
   <!-- testimonials -->
-  <section class="py-15 py-xl-20 border-bottom">
+  <section class="py-15 py-xl-15 border-bottom">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-12">
@@ -549,20 +580,23 @@
           <blockquote class="blockquote">
             <!-- <span class="lh-1 fs-1 mb-0 text-muted">"</span> -->
             <p class="fs-4 mb-3">Including a video on landing page boosts conversion rate by up to 80%.</p>
-            <!-- <footer class="blockquote-footer">
-              <span class="d-block lh-1 text-black">Valerie Doe</span>
-              <small>Senior Product Designer</small>
-            </footer> -->
+            <footer class="blockquote-footer">
+              
+              <span class="d-block lh-1 text-black"><a href="https://www.business2community.com/video-marketing-articles/using-video-increase-conversions-landing-page-01979971">
+                <span class="d-block lh-1 text-black">Business2community</span></a></span>
+              <small>Jan 4, 2023</small>
+            </footer>
           </blockquote>
         </div>
         <div class="col-lg-6">
           <blockquote class="blockquote">
             <!-- <span class="lh-1 fs-1 mb-0 text-muted">"</span> -->
             <p class="fs-4 mb-3">The global e-learning market will be worth $325 billion by 2025.</p>
-            <!-- <footer class="blockquote-footer">
-              <span class="d-block lh-1 text-black">Michael Doe</span>
-              <small>Senior Product Designer</small>
-            </footer> -->
+            <footer class="blockquote-footer">
+              <span class="d-block lh-1 text-black"><a href="https://www.forbes.com/sites/tjmccue/2018/07/31/e-learning-climbing-to-325-billion-by-2025-uf-canvas-absorb-schoology-moodle/?sh=52c608263b39">
+                <span class="d-block lh-1 text-black">Forbes</span></a></span>
+              <small>July 31, 2018</small>
+            </footer>
           </blockquote>
         </div>
       </div>
@@ -572,7 +606,7 @@
 
 
   <!-- contact -->
-  <section class="py-15 py-xl-20 bg-black">
+  <section class="py-15 py-xl-15 bg-black">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-xl-6">
@@ -603,7 +637,7 @@
 
   <!-- footer -->
   <!-- footer -->
-  <footer class="py-15 py-xl-20">
+  <footer class="py-15 py-xl-15 bg-grey">
     <div class="container">
       <div class="row g-4 g-lg-4 mb-10">
         <div class="col-md-3 text-center text-md-start">

@@ -16,26 +16,52 @@
 
   <!-- Title -->
   <title>Services</title>
-
   <style>
     .bg-grad {
       background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
       border: none !important;
     }
-
+    .bg-grey {
+      background: #E9ECEF;
+      border: none !important;
+    }
+  
     .bg-grad-hover:hover {
       background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
     }
-
+  
     .text-grad {
       background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-    .bg-black-tr {
-      background: #000a;
+  
+    .grad-border {
+      position: relative;
+      background: #222;
+      border: none !important;
+    }
+  
+    .grad-border::after {
+      position: absolute;
+      top: -2px;
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      left: -2px;
+      border-radius: 100px;
+      content: '';
+      z-index: -1;
+      background: linear-gradient(135deg, #662D8B 0%, #EC1E79 100%);
+    }
+  
+    .sticky {
+      position: sticky;
+      top: 0;
+    }
+  
+    .navbar {
+      padding: 25px 0 !important;
     }
   </style>
 </head>
@@ -66,7 +92,7 @@
 
 
   <!-- navbar -->
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky  navbar-dark bg-dark">
+  <nav id="mainNav" class="navbar navbar-expand-lg sticky navbar-dark bg-dark">
     <div class="container">
       <a href="./index.html" class="navbar-brand"><img src="./assets/images/proshort2.svg" alt="Logo"></a>
 
@@ -87,7 +113,7 @@
         </li>
 
         <li class="nav-item d-none d-lg-block">
-          <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 " >
+          <a href="#" class="btn btn-outline-primary bg-grad-hover text-white rounded-pill ms-2 grad-border" >
             Try free 
             <i class="mx-1 bi bi-arrow-right"></i>
           </a>
@@ -197,11 +223,11 @@
               </div>
             </div> -->
           </li>
-          <li class="nav-item dropdown dropdown-hover">
+          <!-- <li class="nav-item dropdown dropdown-hover">
             <a class="nav-link dropdown-toggle" href="./pricing.html" id="navbarDropdown-3" role="button"
               aria-expanded="false" data-bs-auto-close="outside">
               Pricing
-            </a>
+            </a> -->
             <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown-3">
               <li><a class="dropdown-item "
                   href="./account.html">Dashboard</a></li>
@@ -706,7 +732,7 @@
 
 
   <!-- cta -->
-  <section class="pb-15 pb-xl-20">
+  <section class="pb-15 pb-xl-15">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
